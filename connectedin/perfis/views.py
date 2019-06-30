@@ -47,5 +47,12 @@ def recusar(request, convite_id):
 
 
 @login_required
+def desfazer_amizade(request, contato_id):
+    perfil_logado = get_perfil_logado(request)
+    perfil_logado.contatos.remove(contato_id)
+    return redirect('index')
+
+
+@login_required
 def get_perfil_logado(request):
     return request.user.perfil

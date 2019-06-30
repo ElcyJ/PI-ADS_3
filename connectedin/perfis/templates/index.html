@@ -55,6 +55,7 @@
                     {% for contato in perfil_logado.contatos.all %}
                         <a href="{% url 'exibir' contato.id %}"
                             class="list-group-item">{{ contato.nome }} // {{ contato.email }}</a>
+                        <a href="{% url 'desfazer_amizade' contato.id %}">deletar</a>
                     {% endfor %}
                 </ul>
             {% else %}
