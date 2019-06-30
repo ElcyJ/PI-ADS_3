@@ -29,3 +29,6 @@ class Convite(models.Model):
         self.convidado.contatos.add(self.solicitante)
         self.solicitante.contatos.add(self.convidado)
         self.delete()
+
+    def recusar(self):
+        self.delete()

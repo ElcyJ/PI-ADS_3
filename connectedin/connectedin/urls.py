@@ -24,10 +24,11 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('perfil/<int:perfil_id>', views.exibir, name='exibir'),
     path('perfis/<int:perfil_id>/convidar', views.convidar, name='convidar'),
-    path('convite/<int:convite_id>/aceitar$', views.aceitar, name='aceitar'),
+    path('convite/<int:convite_id>/aceitar', views.aceitar, name='aceitar'),  # aceitar$
+    path('convite/<int:convite_id>/recusar', views.recusar, name='recusar'),  # teste
     path('registrar/', RegistrarUsuarioView.as_view(), name='registrar'),
     path('login/', v.LoginView.as_view(template_name='login.html'), name='login'),
-    path('logout', v.LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout/', v.LoginView.as_view(template_name='login.html'), name='login'),
 
 ]
 

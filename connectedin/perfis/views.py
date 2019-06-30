@@ -40,5 +40,12 @@ def aceitar(request, convite_id):
 
 
 @login_required
+def recusar(request, convite_id):
+    convite = Convite.objects.get(id=convite_id)
+    convite.recusar()
+    return redirect('index')
+
+
+@login_required
 def get_perfil_logado(request):
     return request.user.perfil
