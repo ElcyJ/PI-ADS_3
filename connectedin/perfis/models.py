@@ -18,6 +18,13 @@ class Perfil(models.Model):
     def convidar(self, perfil_convidado):
         Convite(solicitante=self, convidado=perfil_convidado).save()
 
+    @property
+    def posts(self):
+        return self.perfil_postagem.all()
+
+    def publicar(self, postagem):
+        Post(perfil=self, postagem=postagem)
+
 
 class Convite(models.Model):
     solicitante = models.ForeignKey(Perfil, on_delete=models.CASCADE,
@@ -32,3 +39,12 @@ class Convite(models.Model):
 
     def recusar(self):
         self.delete()
+
+
+class Post(models.Model):
+    perfil = models.ForeignKey(Perfil, on_delete=models.CASCADE, related_name='perfil_postagem')
+    data_postagem = models.DateTimeField(auto_now_add=True)
+    postagem = models.CharField(max_length=255)
+
+    def __str__(self):
+        return "Usuario:"+self.perfil.nome+" Comentario: "+self.postagem+" Data:"+self.get_data()

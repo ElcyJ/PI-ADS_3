@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
-from perfis.models import Perfil, Convite
+from perfis.models import Perfil, Convite, Post
 from django.contrib.auth.decorators import login_required
+from perfis.form_post import PostForm
 
 
 @login_required
@@ -56,3 +57,15 @@ def desfazer_amizade(request, contato_id):
 @login_required
 def get_perfil_logado(request):
     return request.user.perfil
+
+
+@login_required
+def add_post(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            postagem = form['postagem'].value()
+            perfil = get_perfil_logado(request)
+            perfil.publicar(postagem)
+
+    return redirect('index')
