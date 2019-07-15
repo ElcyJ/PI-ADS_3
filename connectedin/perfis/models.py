@@ -20,10 +20,7 @@ class Perfil(models.Model):
 
     @property
     def posts(self):
-        return self.perfil_postagem.all()
-
-    def publicar(self, postagem):
-        Post(perfil=self, postagem=postagem)
+        return Post.objects.filter(id=self.id)
 
 
 class Convite(models.Model):

@@ -76,10 +76,10 @@
                 <button type="submit" value="Postar">Postar</button>
             </form>
     </div>
-    <div>ddfdfsdf
-        {% for post in perfil_logado.posts.all %}
+    <div>
+        {% for post in perfil_logado.perfil_postagem.all %}
 
-            {{ post.postagem }}    jjjjjjjjjjjjj
+            {{post.perfil.nome}} // {{ post.postagem }} // {{post.data_postagem}}
 
         {% endfor %}
     </div>
