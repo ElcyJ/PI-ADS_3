@@ -31,6 +31,7 @@ urlpatterns = [
     path('registrar/', RegistrarUsuarioView.as_view(), name='registrar'),
     path('login/', v.LoginView.as_view(template_name='login.html'), name='login'),
     path('logout/', v.LogoutView.as_view(template_name='login.html'), name='logout'),
+    path('postagem/<int:postagem_id>/excluir', views.deletar_postagem, name='excluir_postagem'),
 
 ]
 

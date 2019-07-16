@@ -61,5 +61,8 @@ class Post(models.Model):
     def __str__(self):
         return self.postagem
 
+    def excluir_postagem(self):
+        self.delete()
+
 
 

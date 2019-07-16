@@ -76,6 +76,14 @@ def ser_super_usuario(request, perfil_id):
     return redirect('index')
 
 
+@login_required
+def deletar_postagem(request, postagem_id):
+    postagem = Post.objects.get(id=postagem_id)
+    postagem.excluir_postagem()
+
+    return redirect('index')
+
+
 class PostView(View):
     def post(self, request):
         form = PostForm(request.POST)
@@ -89,4 +97,5 @@ class PostView(View):
             return redirect('index')
 
         return redirect('index')
+
 

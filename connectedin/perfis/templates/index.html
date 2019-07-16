@@ -76,18 +76,31 @@
                 <button type="submit" value="Postar">Postar</button>
             </form>
     </div>
-    <div>
-        <ul class="list-group">
-            {% for post in timeline %}
-            <li class="list-group-item">
-                <h3> {{ post.perfil.nome }} </h3>
-                <p>{{ post }}</p>
-                <h5>{{post.data_postagem}}</h5>
-            </li>
+    <div class="panel panel-default">
+        {% with total=timeline.count %}
+        {% if timeline %}
+            <div class="panel-heading">
+                <strong> {{ total }}
+                    Linha do Tempo
+                </strong>
+            </div>
+            <ul class="list-group">
+                {% for postagem in timeline %}
+                <li class="list-group-item">
+                    <h3> {{ postagem.perfil.nome }} </h3>
+                    <p>{{ postagem }}</p>
 
-            {% endfor %}
-         </ul>
-    </div>
+                    {% if postagem.perfil.id == perfil_logado.id %}
+                        <a class="btn btn-default" href="{% url 'excluir_postagem' postagem.id %}">Excluir</a>
+                    {% endif %}
+
+                    <h5>{{postagem.data_postagem}}</h5>
+                </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+        </div>
 
     {% if perfil_logado.superuser %}
         <div class="panel panel-default">
