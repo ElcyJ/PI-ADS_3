@@ -1,23 +1,20 @@
 {% extends "base_usuarios.html" %}
 {% block body %}
-    <form class="form-signin" role="form"
-          action="{% url 'login' %}" method="post">
+    <form class="form-signin" role="form" action="{% url 'login' %}" method="post">
         {% csrf_token %}
-        <h2 class="form-signin-heading">Login</h2>
-        <input id="id_usename" name="username" class="form-control"
-               placeholder="Nome" required autofocus>
-        <input id="id_password" name="password" class="form-control"
-               placeholder="Senha" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit"
-                value="Login">Login</button>
-
-        {% if forms.errors %}
+        <h2 class="form-signin-heading" align="center">Login</h2>
+        <input id="id_username" name="username" class="form-control" placeholder="Nome" required autofocus>
+        <p></p>
+        <input type="password" id="id_password" name="password" class="form-control" placeholder="Senha" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" value="Login">Entrar</button>
+        <p></p>
+        {% if form.errors %}
             <div class="alert alert-danger">
-                <button type="button" class="close"
-                        data-dismiss="alert" aria-hidden="true">x</button>
-                Por favor, verifique o Email e/ou Senha informados
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <p>Por favor, verifique o Email e/ou Senha informados</p>
             </div>
         {% endif %}
+        Não possui uma conta?
         <a href="{% url 'registrar' %}">registre-se</a>
     </form>
 {% endblock %}
