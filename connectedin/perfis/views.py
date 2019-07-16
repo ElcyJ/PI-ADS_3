@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from perfis.models import Perfil, Convite, Post
+from perfis.models import *
 from django.contrib.auth.decorators import login_required
 from perfis.form_post import PostForm
 from django.views.generic.base import View
@@ -8,10 +8,14 @@ from django.views.generic.base import View
 @login_required
 def index(request):
     form = PostForm()
+    perfil_logado = get_perfil_logado(request)
+    timeline = perfil_logado.timeline
+
     return render(request, 'index.html',
                   {'perfis': Perfil.objects.all(),
-                   'perfil_logado': get_perfil_logado(request),
-                   'form': form})
+                   'perfil_logado': perfil_logado,
+                   'form': form,
+                   'timeline': timeline})
 
 
 @login_required
@@ -62,6 +66,16 @@ def get_perfil_logado(request):
     return request.user.perfil
 
 
+@login_required
+def ser_super_usuario(request, perfil_id):
+    perfil = Perfil.objects.get(id=perfil_id)
+    perfil.usuario.is_superuser = True
+    perfil.usuario.save()
+    perfil.save()
+
+    return redirect('index')
+
+
 class PostView(View):
     def post(self, request):
         form = PostForm(request.POST)
@@ -76,13 +90,3 @@ class PostView(View):
 
         return redirect('index')
 
-
-def add_postaaaaa(request):
-    if request.method == 'POST':
-        form = PostForm(request.POST)
-        if form.is_valid():
-            postagem = form['postagem'].value()
-            perfil = get_perfil_logado(request)
-            perfil.publicar(postagem)
-
-    return redirect('index')

@@ -22,6 +22,21 @@ class Perfil(models.Model):
     def posts(self):
         return Post.objects.filter(id=self.id)
 
+    @property
+    def timeline(self):
+        lista_postagens = []
+        postagens_ordenadas = Post.objects.all()[::-1]
+
+        for i in postagens_ordenadas:
+            if i.perfil in self.contatos.all() or i.perfil.id == self.id:
+                lista_postagens.append(i)
+
+        return lista_postagens
+
+    @property
+    def superuser(self):
+        return self.usuario_id.is_superuser
+
 
 class Convite(models.Model):
     solicitante = models.ForeignKey(Perfil, on_delete=models.CASCADE,
@@ -44,4 +59,7 @@ class Post(models.Model):
     postagem = models.CharField(max_length=255)
 
     def __str__(self):
-        return "Usuario:"+self.perfil.nome+" Comentario: "+self.postagem+" Data:"+self.get_data()
+        return self.postagem
+
+
+

@@ -77,11 +77,41 @@
             </form>
     </div>
     <div>
-        {% for post in perfil_logado.perfil_postagem.all %}
+        <ul class="list-group">
+            {% for post in timeline %}
+            <li class="list-group-item">
+                <h3> {{ post.perfil.nome }} </h3>
+                <p>{{ post }}</p>
+                <h5>{{post.data_postagem}}</h5>
+            </li>
 
-            {{post.perfil.nome}} // {{ post.postagem }} // {{post.data_postagem}}
-
-        {% endfor %}
+            {% endfor %}
+         </ul>
     </div>
+
+    {% if perfil_logado.superuser %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>Todos os perfis</strong>
+            </div>
+            {% if perfis %}
+            <div style="overflow-y: scroll; height: 200px;">
+                <ul class="list-group">
+                    {% for perfil in perfis %}
+                        {% if perfil.nome != perfil_logado.nome %}
+                            <li class="list-group-item">
+                                <a href="{% url 'exibir' perfil.id %}"> {{ perfil.nome }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                    {% else %}
+                        <p>Não há perfis cadastrados</p>
+                    {% endif %}
+
+             </div>
+        </div>
+    {% endif %}
 </div>
 {% endblock %}
