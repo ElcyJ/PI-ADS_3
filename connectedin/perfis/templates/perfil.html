@@ -11,6 +11,7 @@
         </address>
         {% if ja_eh_contato %}
             <div class="well well-sm">Vocês estão conectados!</div>
+            <a href="{% url 'desfazer_amizade' perfil.id %}" class="btn btn-danger poll-right">desfazer amizade</a>
         {% else %}
             {% if perfil == perfil_logado %}
                 <a href="#"

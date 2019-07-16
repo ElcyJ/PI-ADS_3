@@ -8,15 +8,15 @@
         <link href="{% static 'styles/main.css' %}" rel="stylesheet">
         <title>ConnectedIn</title>
     </head>
-    <body>
-        <div class="container">
+    <body style="background-color:Lightblue;">
+        <div class="col-lg-12">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="" title="Perfil"><a href="{% url 'exibir' perfil_logado.id %}">{{ perfil_logado.nome }}</a></li>
-                    <li class=""><a href="{% url 'index' %}">Página inicial</a></li>
-                    <li class=""><a href="/logout/">Sair</a></li>
+                    <li title="Perfil"><a href="{% url 'exibir' perfil_logado.id %}"><font color="gray" size="4px">{{ perfil_logado.nome }}</font></a></li>
+                    <li><a href="{% url 'index' %}"><font color="gray" size="4px">Página inicial</font></a></li>
+                    <li><a href="/logout/"><font color="gray" size="4px">Sair</font></a></li>
                 </ul>
-                <h3 class="text-muted">ConnectedIn</h3>
+                <h3><font color="gray">ConnectedIn</font></h3>
             </div>
             <div class="row content">
                 {% block body %}
