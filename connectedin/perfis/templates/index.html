@@ -76,7 +76,8 @@
                             <p>{{ postagem }}</p>
 
                             {% if postagem.perfil.id == perfil_logado.id %}
-                                <a class="btn btn-default" href="{% url 'excluir_postagem' postagem.id %}">Excluir</a>
+                                <a class="btn btn-default" href="{% url 'excluir_postagem' postagem.id %}"
+                                   onclick="return confirm('Deseja excluir esta postagem?');">Excluir</a>
                             {% endif %}
 
                             <h5>{{postagem.data_postagem}}</h5>

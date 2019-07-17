@@ -2,11 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cfe5968-9852-4ca3-91c4-4b0e7dae577b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/connectedin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/connectedin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectedin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectedin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectedin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectedin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectedin/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectedin/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/form_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/form_post.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfis/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/static/scripts/vendor/bootstrap-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/static/scripts/vendor/bootstrap-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/static/scripts/vendor/jquery-1.9.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/static/scripts/vendor/jquery-1.9.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/static/styles/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/static/styles/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/static/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/static/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/static/styles/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/static/styles/signin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfis/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfis/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfis/templates/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/templates/perfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfis/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/templates/base_usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/base_usuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/templates/registrar.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/registrar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perfis/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="306">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -31,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perfis/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="65" column="40" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+            <state relative-caret-position="304">
+              <caret line="79" column="93" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -50,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perfis/static/styles/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="89080">
               <caret line="5240" column="22" selection-start-line="5240" selection-start-column="22" selection-end-line="5240" selection-end-column="22" />
             </state>
           </provider>
@@ -59,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/perfis/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="255">
+              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -71,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perfis/templates/perfil.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="115" selection-start-line="13" selection-start-column="115" selection-end-line="13" selection-end-column="115" />
+            <state relative-caret-position="238">
+              <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -130,8 +161,8 @@
         <option value="$PROJECT_DIR$/usuarios/templates/login.html" />
         <option value="$PROJECT_DIR$/usuarios/templates/registrar.html" />
         <option value="$PROJECT_DIR$/perfis/static/styles/bootstrap.css" />
-        <option value="$PROJECT_DIR$/perfis/templates/perfil.html" />
         <option value="$PROJECT_DIR$/perfis/templates/index.html" />
+        <option value="$PROJECT_DIR$/perfis/templates/perfil.html" />
         <option value="$PROJECT_DIR$/perfis/templates/base.html" />
       </list>
     </option>
@@ -340,6 +371,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/perfis/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfis/static/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfis/static/styles/signin.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/perfis/static/styles/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89080">
+          <caret line="5240" column="22" selection-start-line="5240" selection-start-column="22" selection-end-line="5240" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/usuarios/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -364,47 +418,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/perfis/static/styles/signin.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perfis/static/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perfis/static/styles/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/perfis/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="5240" column="22" selection-start-line="5240" selection-start-column="22" selection-end-line="5240" selection-end-column="22" />
+        <state relative-caret-position="304">
+          <caret line="79" column="93" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/perfis/templates/perfil.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="115" selection-start-line="13" selection-start-column="115" selection-end-line="13" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perfis/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perfis/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="65" column="40" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+        <state relative-caret-position="238">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/perfis/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="255">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

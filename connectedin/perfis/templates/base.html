@@ -14,7 +14,7 @@
                 <ul class="nav nav-pills pull-right">
                     <li title="Perfil"><a href="{% url 'exibir' perfil_logado.id %}"><font color="gray" size="4px">{{ perfil_logado.nome }}</font></a></li>
                     <li><a href="{% url 'index' %}"><font color="gray" size="4px">Página inicial</font></a></li>
-                    <li><a href="/logout/"><font color="gray" size="4px">Sair</font></a></li>
+                    <li onclick="return confirm('Deseja sair do connectedIn?');"><a href="/logout/"><font color="gray" size="4px">Sair</font></a></li>
                 </ul>
                 <h3><font color="gray">ConnectedIn</font></h3>
             </div>
